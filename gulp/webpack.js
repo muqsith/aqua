@@ -44,7 +44,8 @@ Gulp.task('webpack', (callback) => {
         },
         output: {
             path: Path.resolve(__dirname, '../public/pages'),
-            filename: '[name].min.js'
+            filename: '[name].min.js',
+            publicPath: '/um'
         },
         resolve: {
             extensions: ['.js', '.jsx']
